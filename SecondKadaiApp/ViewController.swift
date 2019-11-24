@@ -9,8 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var handle: UITextField!
     
-    @IBOutlet weak var TextField: UITextField!
     
 
     override func viewDidLoad() {
@@ -23,7 +23,7 @@ class ViewController: UIViewController {
             
             let nextView = segue.destination as! ResultViewController
             
-            nextView.argString = TextField.text!
+            nextView.argString = UITextField.text
             
         
         }

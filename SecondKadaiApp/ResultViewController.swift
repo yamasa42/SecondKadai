@@ -9,8 +9,11 @@
 import UIKit
 
 class ResultViewController: UIViewController {
-
-    @IBOutlet weak var label:UILabel!
+    @IBOutlet weak var Label: UILabel!
+    @IBAction func unwind(_ segue: UIStoryboardSegue) {
+    }
+    
+    
     
     var argString = ""
 
@@ -18,7 +21,7 @@ class ResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        label.text = "こんにちは\(argString)さん"
+        Label.text = "こんにちは\(argString)さん"
     }
     
         
