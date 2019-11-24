@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var handle: UITextField!
     
     
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +24,7 @@ class ViewController: UIViewController {
             
             let nextView = segue.destination as! ResultViewController
             
-            nextView.argString = UITextField.text
+            nextView.argString = handle.text!
             
         
         }
